@@ -1,0 +1,341 @@
+@import url("utility.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+:root {
+  --montre-blue: hsl(192, 100%, 9%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: cursive;
+  scroll-behavior: smooth;
+}
+header {
+  padding: 2rem 2rem;
+}
+nav {
+  height: 6vh;
+}
+.logo {
+  font-weight: 700;
+}
+.logo span {
+  color: red;
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+}
+nav li {
+  list-style: none;
+}
+.navigation li:first-child {
+  margin-right: 1.5rem;
+}
+.bar {
+  width: 3rem;
+  height: 1.7rem;
+}
+.bars {
+  background: #000;
+  height: 0.2rem;
+}
+
+nav a:hover {
+  color: green;
+}
+
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.453)),
+    url("/images/landingImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blur {
+  backdrop-filter: blur(0.3rem);
+  height: 100vh;
+}
+.hero-text {
+  height: 100vh;
+  color: rgb(250, 250, 250);
+}
+/* 
+.hero-text div {
+  font-size: 7rem;
+  font-weight: 800;
+  text-indent: 4rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.282), rgba(0, 0, 0, 0.389)),
+    url("/images/Watches-news-MEN-WATCHES.jpg");
+  background-position: left;
+  background-size: 100vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.watch-section {
+  height: 190vh;
+  padding: 4rem 0rem;
+  /* background: linear-gradient(rgba(85, 78, 78, 0.187), rgba(0, 0, 0, 0.389)); */
+}
+.watch-text {
+  font-size: 7rem;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+.watch-text:hover {
+  /* transform: scale(1.06); */
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: rgb(85, 78, 78);
+  background-color: white;
+}
+.cards {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
+  padding: 2rem;
+}
+.cards div {
+  width: 30rem;
+  height: 30rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.cards div > img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+.cards div:hover {
+  border-radius: 2rem;
+  transition: all 1s ease-in-out;
+}
+.cards div > img:hover {
+  transform: scale(1.3);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.about-me {
+  min-height: 100vh;
+  padding: 4rem 0rem;
+}
+.ceo-header {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.ceo-card {
+  width: 100%;
+  padding: 4rem 4rem;
+  background-color: rgba(183, 246, 183, 0.281);
+}
+.ceo-image-wrapper {
+  width: 50%;
+}
+.ceo-image {
+  width: 50rem;
+  height: 60rem;
+  object-fit: contain;
+}
+.ceo-text {
+  width: 50%;
+}
+.click-btn {
+  color: #119717;
+  border: 2px solid rgba(0, 0, 0, 0.211);
+  text-decoration: none;
+  width: 15rem;
+  height: 6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.click-btn:hover {
+  background-color: #119717;
+  color: white;
+}
+.message-section {
+  min-height: 80vh;
+  padding: 5rem 4rem;
+}
+.lets-talk-txt {
+  width: 50vw;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.talk-section {
+  width: 50vw;
+}
+.li {
+  display: list-item;
+  list-style-type: decimal-leading-zero;
+  list-style-position: outside;
+}
+.li::marker {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 1rem;
+}
+.form-input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgba(3, 3, 3, 0.212);
+  padding: 1rem 0rem;
+  margin-bottom: 1rem;
+  width: 50vw;
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+.form-input:focus {
+  outline: none;
+  border-bottom: 1px solid #119717;
+}
+.send-btn-wrapper {
+  height: 8vh;
+  padding-top: 0.4rem;
+}
+.send-btn {
+  background-color: #119717;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border: none;
+  height: 8vh;
+  width: 12vw;
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+}
+.dots {
+  color: rgba(0, 0, 0, 0.47);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 2rem;
+  }
+  header {
+    padding: 1rem;
+  }
+  .hero-section {
+    height: 50vh;
+  }
+
+  .watch-section {
+    height: 110vh;
+  }
+  .watch-text {
+    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    overflow: hidden;
+  }
+  .cards div {
+    width: 15rem;
+    height: 15rem;
+  }
+  .cards div > img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .ceo-card {
+    padding: 1.5rem;
+    background-color: rgba(183, 246, 183, 0.281);
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .two {
+    flex-direction: column-reverse;
+  }
+  .ceo-image-wrapper {
+    width: 70%;
+  }
+  .ceo-image {
+    width: 25rem;
+    height: 30rem;
+    object-fit: contain;
+  }
+  .ceo-text {
+    width: 70%;
+  }
+  .click-btn {
+    color: #119717;
+    border: 2px solid rgba(0, 0, 0, 0.211);
+    text-decoration: none;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .message-section {
+    min-height: 40vh;
+    padding: 3rem 4rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .lets-talk-txt {
+    width: 80vw;
+    font-size: 1.89rem;
+  }
+  .talk-section {
+    width: 25vw;
+  }
+  .li::marker {
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  .form-input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.212);
+    padding: 1rem 0rem;
+    margin-bottom: 1rem;
+    width: 88vw;
+    background-color: transparent;
+    font-size: 1.6rem;
+  }
+  .form-input:focus {
+    outline: none;
+    border-bottom: 1px solid #119717;
+  }
+  .send-btn-wrapper {
+    height: 8vh;
+    padding-top: 0.4rem;
+  }
+  .send-btn {
+    background-color: #119717;
+    font-size: 1.6rem;
+    font-weight: 800;
+    border: none;
+    height: 8vh;
+    width: 12rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+  }
+  .dots {
+    color: rgba(0, 0, 0, 0.47);
+  }
+
+  .res-d-none {
+    display: none;
+  }
+  .res-d-flex {
+    display: flex;
+  }
+}
