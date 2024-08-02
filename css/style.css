@@ -13,7 +13,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family:sans-serif;
+ font-family: 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
 }
 header {
@@ -297,7 +297,9 @@ nav a:hover {
   .li::marker {
     color: rgba(0, 0, 0, 0.2);
   }
-
+  .form-label {
+  width: 20rem;
+  }
   .form-input {
     display: block;
     border: none;
