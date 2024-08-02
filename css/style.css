@@ -275,8 +275,9 @@ nav a:hover {
   .click-btn {
     color: #119717;
     border: 2px solid rgba(0, 0, 0, 0.211);
+    margin-top: 2rem;
     text-decoration: none;
-    width: 15rem;
+    width: 18rem;
     height: 4rem;
     border-radius: 1rem;
     cursor: pointer;
